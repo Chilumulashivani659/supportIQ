@@ -1,0 +1,6 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+groq_test.py
+test_hindsight.py

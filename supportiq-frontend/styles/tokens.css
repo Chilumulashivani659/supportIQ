@@ -1,0 +1,127 @@
+/* ==========================================================================
+   SupportIQ — Design tokens
+   Memory-powered customer support intelligence
+   ========================================================================== */
+
+:root {
+  /* ---- Brand & accent -------------------------------------------------- */
+  --navy-900: #071228;
+  --navy-800: #0b1a35;
+  --navy-700: #102445;
+  --indigo-700: #1f3bc4;
+  --indigo-600: #2c4ce0;
+  --indigo-500: #3d5cf0;
+  --indigo-400: #6b83f5;
+  --indigo-200: #c3d0fb;
+  --indigo-100: #e0e7fe;
+  --indigo-50:  #eff3ff;
+
+  --purple-600: #6f4fd8;
+  --purple-100: #ece5fd;
+  --purple-50:  #f5f1fe;
+
+  --green-700: #0b7a54;
+  --green-600: #0e9f6e;
+  --green-100: #cfeee1;
+  --green-50:  #e9f8f2;
+
+  --amber-700: #a35c07;
+  --amber-600: #c2740b;
+  --amber-100: #f8e4bd;
+  --amber-50:  #fdf5e7;
+
+  --red-700: #b32626;
+  --red-600: #d33a3a;
+  --red-100: #f6d0d0;
+  --red-50:  #fdeded;
+
+  --teal-700: #0b6a5e;
+  --teal-600: #0e8574;
+  --teal-100: #c9e9e2;
+  --teal-50:  #e9f6f3;
+
+  /* ---- Surfaces -------------------------------------------------------- */
+  --bg: #f4f6fb;
+  --bg-elevated: #fbfcfe;
+  --surface: #ffffff;
+  --surface-2: #f8fafc;
+  --surface-3: #f2f5fa;
+  --border: #e6eaf3;
+  --border-soft: #eef1f7;
+  --border-strong: #d8dfec;
+
+  /* ---- Ink ------------------------------------------------------------- */
+  --ink: #0d1b34;          /* deep navy — primary text */
+  --ink-2: #35435e;        /* secondary text */
+  --ink-3: #66748f;        /* muted text */
+  --ink-4: #97a2b7;        /* faint text / placeholders */
+  --ink-inverse: #ffffff;
+
+  /* ---- Typography ------------------------------------------------------ */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    "Liberation Mono", monospace;
+
+  --fs-11: 11px;
+  --fs-12: 12px;
+  --fs-13: 13px;
+  --fs-14: 14px;
+  --fs-15: 15px;
+  --fs-16: 16px;
+  --fs-18: 18px;
+  --fs-20: 20px;
+  --fs-23: 23px;
+  --fs-27: 27px;
+  --fs-32: 32px;
+
+  /* ---- Radii ----------------------------------------------------------- */
+  --r-xs: 6px;
+  --r-sm: 8px;
+  --r-md: 11px;
+  --r-lg: 14px;
+  --r-xl: 18px;
+  --r-2xl: 22px;
+  --r-full: 999px;
+
+  /* ---- Shadows --------------------------------------------------------- */
+  --sh-xs: 0 1px 2px rgba(13, 27, 52, 0.05);
+  --sh-sm: 0 1px 2px rgba(13, 27, 52, 0.04), 0 2px 6px -2px rgba(13, 27, 52, 0.06);
+  --sh-md: 0 2px 4px -1px rgba(13, 27, 52, 0.04), 0 10px 24px -10px rgba(13, 27, 52, 0.14);
+  --sh-lg: 0 4px 10px -4px rgba(13, 27, 52, 0.08), 0 22px 44px -18px rgba(13, 27, 52, 0.24);
+  --sh-pop: 0 12px 32px -8px rgba(13, 27, 52, 0.18), 0 2px 8px -2px rgba(13, 27, 52, 0.08);
+  --ring-indigo: 0 0 0 3px rgba(44, 76, 224, 0.16);
+  --ring-green: 0 0 0 3px rgba(14, 159, 110, 0.16);
+  --ring-red: 0 0 0 3px rgba(211, 58, 58, 0.14);
+
+  /* ---- Spacing scale --------------------------------------------------- */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-7: 32px;
+  --sp-8: 40px;
+  --sp-9: 56px;
+
+  /* ---- Motion ---------------------------------------------------------- */
+  --ease: cubic-bezier(0.32, 0.72, 0.28, 1);
+  --t-fast: 120ms var(--ease);
+  --t-base: 200ms var(--ease);
+  --t-slow: 320ms var(--ease);
+
+  /* ---- Layout ---------------------------------------------------------- */
+  --sidebar-w: 258px;
+  --sidebar-w-rail: 74px;
+  --topbar-h: 66px;
+  --content-max: 1320px;
+
+  /* ---- Z index --------------------------------------------------------- */
+  --z-sticky: 20;
+  --z-sidebar: 40;
+  --z-overlay: 45;
+  --z-dropdown: 60;
+  --z-modal: 80;
+  --z-toast: 95;
+}
