@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>SupportIQ — Memory-powered customer support intelligence</title>
+<meta name="description" content="SupportIQ turns customer interaction history into concise, actionable ISP support recommendations. Pattern detection, memory insight, and a clear recommended next action for every ticket.">
+<meta name="theme-color" content="#0d1b34">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/layout.css">
+<link rel="stylesheet" href="styles/components.css">
+<link rel="stylesheet" href="styles/pages.css">
+</head>
+<body>
+
+<!-- Boot splash: replaced by the application shell on init -->
+<div id="boot">
+  <div class="boot-inner">
+    <div class="boot-mark brand-mark" aria-hidden="true">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3 3 7.5 12 12l9-4.5L12 3Z"/><path d="m3 12.5 9 4.5 9-4.5"/><path d="m3 17 9 4.5 9-4.5"/>
+      </svg>
+    </div>
+    <div class="center">
+      <div class="strong" style="font-size:15px;letter-spacing:-.02em">SupportIQ</div>
+      <div class="t-xs ink-4 mt-2">Memory-powered support intelligence</div>
+    </div>
+    <div class="boot-bar"></div>
+  </div>
+</div>
+
+<!-- Application shell -->
+<div class="app" id="app">
+  <div class="scrim" id="scrim" data-action="close-sidebar"></div>
+  <aside class="sidebar" id="sidebar" aria-label="Primary navigation"></aside>
+  <div class="main">
+    <header class="topbar" id="topbar"></header>
+    <main class="content" id="content" role="main" tabindex="-1"></main>
+  </div>
+</div>
+
+<div class="toast-stack" id="toasts" aria-live="polite" aria-atomic="false"></div>
+<div id="overlays"></div>
+
+<noscript>
+  <div style="max-width:640px;margin:80px auto;padding:24px;font:15px/1.6 system-ui,sans-serif">
+    <h1 style="font-size:20px;margin-bottom:8px">SupportIQ requires JavaScript</h1>
+    <p style="color:#66748f">This is an interactive support operations workspace. Enable JavaScript to explore the customer intelligence views.</p>
+  </div>
+</noscript>
+
+<!-- Core -->
+<script src="scripts/core/dom.js"></script>
+<script src="scripts/core/format.js"></script>
+<script src="scripts/core/icons.js"></script>
+<script src="scripts/core/store.js"></script>
+<script src="scripts/core/toast.js"></script>
+<script src="scripts/core/router.js"></script>
+<script src="scripts/core/api.js"></script>
+<script src="scripts/core/engine.js"></script>
+
+<!-- Customer records held by the workspace (directory, memory, tickets) -->
+<script src="scripts/data/customers.js"></script>
+<script src="scripts/data/memory.js"></script>
+<script src="scripts/data/tickets.js"></script>
+<script src="scripts/data/escalations.js"></script>
+<script src="scripts/data/analytics.js"></script>
+
+<!-- Components -->
+<script src="scripts/components/statusbadge.js"></script>
+<script src="scripts/components/sidebar.js"></script>
+<script src="scripts/components/topheader.js"></script>
+<script src="scripts/components/metriccard.js"></script>
+<script src="scripts/components/datatable.js"></script>
+<script src="scripts/components/filterbar.js"></script>
+<script src="scripts/components/states.js"></script>
+<script src="scripts/components/customersearch.js"></script>
+<script src="scripts/components/customersummary.js"></script>
+<script src="scripts/components/currentissue.js"></script>
+<script src="scripts/components/memoryinsight.js"></script>
+<script src="scripts/components/memorytimeline.js"></script>
+<script src="scripts/components/memorydelta.js"></script>
+<script src="scripts/components/supportintelligence.js"></script>
+<script src="scripts/components/recommendationcard.js"></script>
+<script src="scripts/components/reasoncard.js"></script>
+<script src="scripts/components/escalationcard.js"></script>
+<script src="scripts/components/customerresponse.js"></script>
+<script src="scripts/components/flowstrip.js"></script>
+<script src="scripts/components/palette.js"></script>
+
+<!-- Pages -->
+<script src="scripts/pages/overview.js"></script>
+<script src="scripts/pages/workspace.js"></script>
+<script src="scripts/pages/customers.js"></script>
+<script src="scripts/pages/tickets.js"></script>
+<script src="scripts/pages/memory.js"></script>
+<script src="scripts/pages/escalations.js"></script>
+<script src="scripts/pages/analytics.js"></script>
+<script src="scripts/pages/settings.js"></script>
+<script src="scripts/pages/help.js"></script>
+
+<!-- Bootstrap -->
+<script src="scripts/app.js"></script>
+</body>
+</html>
